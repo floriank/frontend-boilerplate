@@ -1,1 +1,10 @@
-bower.json
+{
+  "name": "frontend-boilerplate",
+  "version": "0.0.1",
+  "devDependencies": {
+    "angular": "1.2.3",
+    "angular-mocks": "1.2.3",
+    "bootstrap": "3.0.0"
+  },
+  "dependencies": {}
+}
