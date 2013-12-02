@@ -2,12 +2,14 @@ module.exports =
   build_dir: 'build'
   compile_dir: 'bin'
   app_files:
+    js: [
+      'src/**/*.js'
+    ]
     coffee: [
       'src/**/*.coffee'
-      '!src/**/*.spec.coffee'
     ]
     coffeeunit: [
-      'src/**/*.spec.coffee'
+      'test/**/*.coffee'
     ]
     atpl: [
       'src/app/**/*.tpl.html'
@@ -19,3 +21,17 @@ module.exports =
       'src/index.html'
     ]
     less: 'src/less/style.less'
+  test_files:
+    js: [
+      'vendor/angular-mocks/angular-mocks.js'
+      'vendor/chai/chai.js'
+      'vendor/should/should.js'
+    ]
+  vendor_files:
+    js: [
+      'vendor/angular/angular.js',
+      'vendor/angular/angular-routing.js',
+      'vendor/angular/angular-cookies.js'
+    ],
+    css: []
+    assets: []

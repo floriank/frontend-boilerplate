@@ -178,7 +178,8 @@ module.exports = (grunt) ->
         configFile: "<%= build_dir %>/karma-unit.js"
 
       unit:
-        runnerPort: 9101
+        port: 9877
+        runnerPort: 9100
         background: yes
 
       continuous:
