@@ -14,6 +14,7 @@ module.exports = (grunt) ->
     "karma"
     "ngmin"
     "html2js"
+    "devserver"
   ].forEach (name) ->
     grunt.loadNpmTasks "grunt-#{name}"
 
@@ -36,6 +37,11 @@ module.exports = (grunt) ->
       options:
         dest: "CHANGELOG.md"
         template: 'changelog.tpl'
+
+    devserver:
+      options:
+        port: 3000
+        base: './bin'
 
     bump:
       options:
@@ -228,6 +234,7 @@ module.exports = (grunt) ->
 
   grunt.initConfig grunt.util._.extend(taskConfig, userConfig)
   grunt.renameTask "watch", "delta"
+  grunt.registerTask "server", ["devserver"]
 
   grunt.registerTask "watch", ["build", "karma:unit", "delta"]
   grunt.registerTask "build", [

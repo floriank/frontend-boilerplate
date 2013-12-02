@@ -27,6 +27,7 @@
     "grunt-contrib-coffee": "latest",
     "grunt-coffeelint": "0.0.6",
     "grunt-conventional-changelog": "~0.1.1",
-    "grunt-bump": "0.0.6"
+    "grunt-bump": "0.0.6",
+    "grunt-devserver": "~0.4.1"
   }
 }
