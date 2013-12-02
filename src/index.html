@@ -2,8 +2,6 @@
 <html ng-app="frontend-boilerplate" ng-controller="AppCtrl">
   <head>
     <title>Frontend Boilerplate</title>
-    <!-- font awesome from BootstrapCDN -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
     <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
@@ -11,6 +9,7 @@
   <body>
     <p>Body code goes here.</p>
     <p>Here is a variable: {{foo}}</p>
+    <p test-template></p>
 
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
