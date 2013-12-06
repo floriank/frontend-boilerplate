@@ -30,8 +30,7 @@ module.exports =
   vendor_files:
     js: [
       'vendor/angular/angular.js',
-      'vendor/angular/angular-routing.js',
-      'vendor/angular/angular-cookies.js'
+      'vendor/angular-route/angular-route.js'
     ],
     css: []
     assets: []
