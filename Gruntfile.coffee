@@ -156,6 +156,7 @@ module.exports = (grunt) ->
           noUnderscores: no
           noIDs: no
           zeroUnits: no
+          includePath: ['vendor/bootstrap/less']
 
     coffeelint:
       src:
